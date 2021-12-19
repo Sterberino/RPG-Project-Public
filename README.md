@@ -40,7 +40,7 @@ Any good RPG must have a fully realized quest system. When designing this quest 
   <li>Reach a target destination</li>
 </ol>
  
-The quest system can, as shown above, accomplished the implementation of all of these things. Each quest node has an adjacency list of nodes required to be completed prior to being marked as available. These quest nodes can also require nodes in their adjacency list to be failed or to be not yet available, so as to allow for player choice. The architecture makes use of Unity's Scriptable Object class for cross scene referencing and persistence.
+The quest system can, as shown above, accomplish the implementation of all of these things. Each quest node has an adjacency list of nodes required to be completed prior to being marked as available. These quest nodes can also require nodes in their adjacency list to be failed or to be not yet available, so as to allow for player choice. The architecture makes use of Unity's Scriptable Object class for cross scene referencing and persistence.
  
 Note: Images are from earlier builds of the game.
 

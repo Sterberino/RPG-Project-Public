@@ -12,6 +12,26 @@ This a public showcase of features present in my RPG Project. My goal was to imp
 
 The branching dialogue system is, in essence, a directed graph. If a dialogue node has more than one dialogue node in its adjacency list, buttons are instantiated, which can be selected to move to the next node. If there is a single dialogue node in the adjacency list, that node is loaded. If there are no nodes in the current dialogue node's adjacency list, dialogue is terminated.
 
+## Flexible and Branching Quest system
+
+<div align="center">
+<p float="center">
+   <img src="https://github.com/Sterberino/RPG-Project-Public/blob/main/compressed%20showcase%20gifs/quest1%20compressed.gif" width="400" height="300" />
+  <img src="https://github.com/Sterberino/RPG-Project-Public/blob/main/compressed%20showcase%20gifs/quest2%20compressed.gif" width="400" height="300" />
+</p>
+</div>
+
+<div align="center">
+<p float="center">
+   <img src="https://github.com/Sterberino/RPG-Project-Public/blob/main/compressed%20showcase%20gifs/Quest3%20compressed.gif" width="400" height="300" />
+  <img src="https://github.com/Sterberino/RPG-Project-Public/blob/main/compressed%20showcase%20gifs/Quest4.gif" width="400" height="300" />
+</p>
+</div>
+
+ 
+ <font size="30"> **Explanation\:** </font>
+ 
+Note: Images are from earlier builds of the game.
 
 ## Inventory Management
 
@@ -23,6 +43,8 @@ The branching dialogue system is, in essence, a directed graph. If a dialogue no
  <font size="30"> **Explanation\:** </font>
 
 Like any good RPG, the character can collect and use items dropped by defeated opponents, or found in the game world. The inventory UI implements a tab system to allow for viewing specific item types. It also accounts for stackable and non-stackable items, and displays the image and description associated with each item. Different item types also display different text on the button used to use the selected item.
+
+
 
 ## Melee Combat
 

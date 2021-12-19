@@ -14,6 +14,6 @@ The branching dialogue system is, in essence, a directed graph. If a dialogue no
 ## Melee Combat
 
 <p align="center">
-  <img src="https://github.com/Sterberino/RPG-Project-Public/blob/main/compressed%20showcase%20gifs/melee%20punching%20compressed.gif" width="512" height="384">
-  <img src="https://github.com/Sterberino/RPG-Project-Public/blob/main/compressed%20showcase%20gifs/melee%20bat%20compressed.gif" width="512" height="384">
+  <img src="https://github.com/Sterberino/RPG-Project-Public/blob/main/compressed%20showcase%20gifs/melee%20punching%20compressed.gif" width="342" height="256">
+  <img src="https://github.com/Sterberino/RPG-Project-Public/blob/main/compressed%20showcase%20gifs/melee%20bat%20compressed.gif" width="342" height="256">
 </p>

@@ -1,5 +1,5 @@
 # RPG-Project-Public
-This a public showcase of features present in my RPG Project in C# and Unity3D. My goal was to implement many of the features present in other open world RPG titles, such as a branching dialogue system, branching quest system for nonlinear story development, character leveling, item and inventory management, and more.
+This a public showcase of features present in my RPG Project in C# and Unity3D. My goal was to implement many of the features present in other open world RPG titles, such as a branching dialogue system, branching quest system for nonlinear story development, character leveling, item and inventory management, and more. I won't be making the code available, because I want to ship this game someday. I will be offering detailed explanations of the project though.
 
 
 ## Branching Dialogue system
@@ -93,6 +93,19 @@ The more fun and engaging combat type in this project involves shooting guns. Wh
  
 What good is an RPG if you can't save your progress? The save system makes use of C#'s System.IO namespace and Unity's Application.PersistentDataPath variable, which provides a platform specific path used by unity for data storage. Quests' state, the player's inventory, position and scene, and level information, as well as scene data such as dead NPCs are all saved by serializing information into Json files using Unity's JsonUtility.ToJson() method, which takes as input structs comprised of simple data types such as integers, strings, and arrays/ lists, and formats that information into a json string. Then, using System.IO, the string is saved as a Json file to an appropriate save file (save folder) directory. This information is then retrieved when loading a saved game using JsonUtility.FromJson(). A .png file showing the player's location is also saved using System.IO.File.WriteAllBytes() This .png file is loaded in at runtime when the player is viewing their save. The player can name their save directory, so a check must be done for special characters prior to saving. When the directories are loaded into the save menu to be viewed by the player, the button for selecting the save has text equivalent to the save's truncated directory/ save name.
 
+## Pathfinding
+
+<div align="center">
+<p float="center">
+   <img src="https://github.com/Sterberino/RPG-Project-Public/blob/main/compressed%20showcase%20gifs/quest1%20compressed.gif" width="400" height="300" />
+  <img src="https://github.com/Sterberino/RPG-Project-Public/blob/main/compressed%20showcase%20gifs/quest2%20compressed.gif" width="400" height="300" />
+</p>
+</div>
+
+<font size="30"> **Explanation\:** </font>
+
+If we want convincing enemies, they need to be able to navigate the game world and avoid obstacles. In order to accomplish this, I wrote an A Star pathfinding script that makes use of Unity's Job system and Burst compiler. This allows for safe, multithreaded code that is translated from IL/. NET bytecode to highly optimized native code using LLVM. Pathfinding is very fast, but it can be faster. Despite this, pathfinding is still compputationally expensive, so if the NPC has no obstructions between it and its target, it simply moves towards its goal without pathfinding. One issue with pathfinding is that because the colliders for NPCs have a non-zero size, the corners of those colliders can get caught on obstacles even with pathfinding. To fix this, I implemented some context steering to help them avoid local obstacles.
+
 ## A demo?
 
-Unfortunately, while the core systems are largely in place now, the game still needs some time before it is demo ready. Using the quest system to design playable tests, drawing areas of the game world for the player to traverse, and writing dialogue are all still in progress endeavors. I will absolutely be uploading an executable file containing the demo when the time comes.
+Unfortunately, while the core systems are largely in place now, the game still needs a lot of work before it is demo ready. Using the quest system to design playable tests, drawing areas of the game world for the player to traverse, and writing dialogue are all still in progress endeavors. I will absolutely be uploading an executable file containing the demo when the time comes.

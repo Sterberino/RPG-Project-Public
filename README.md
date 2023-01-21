@@ -97,8 +97,8 @@ What good is an RPG if you can't save your progress? The save system makes use o
 
 <div align="center">
 <p float="center">
-   <img src="https://github.com/Sterberino/RPG-Project-Public/blob/main/compressed%20showcase%20gifs/quest1%20compressed.gif" width="400" height="300" />
-  <img src="https://github.com/Sterberino/RPG-Project-Public/blob/main/compressed%20showcase%20gifs/quest2%20compressed.gif" width="400" height="300" />
+   <img src="https://github.com/Sterberino/RPG-Project-Public/blob/main/Pathfinding-Showcase.gif" width="400" height="300" />
+  <img src="https://github.com/Sterberino/RPG-Project-Public/blob/main/Context-Steering.gif" width="400" height="300" />
 </p>
 </div>
 
